@@ -18,10 +18,10 @@
     docker run -v "*some path*":"/root/model" -it mnist  python main.py --epoch 1
     ```
    This will create model.nn file, which is pretrained model
-   '''
-4.5 Put data you want to predict on into your volume folder. Name it test.npy. It shoud match format expected by model
-    '''
-5. Run predict.py to start prediction.
+   
+5. Put data you want to predict on into your volume folder. Name it test.npy. It shoud match format expected by model
+    
+6. Run predict.py to start prediction.
     ```
     docker run -v "*some path*":"/root/model" -it mnist  python predict.py
     ```
